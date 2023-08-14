@@ -6,7 +6,8 @@ export default class StudentService {
     }
 
     getAll = async () => {
-        // Completar
+        let courses = await coursesModel.find();
+        return courses.map(course => course.toObject());
     }
     save = async (course) => {
         // Completar
