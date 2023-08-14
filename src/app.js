@@ -2,6 +2,7 @@ import express from 'express';
 import __dirname from './util.js';
 
 import mongoose from 'mongoose';
+import studentRouter from './routes/students.router.js'
 
 //Declarando Express para usar sus funciones.
 const app = express();

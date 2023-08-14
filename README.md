@@ -8,17 +8,16 @@ Utilizar mongoose importándolo en Módulo (import) y gestionar sus acciones a t
 
 Crear una colección llamada ‘estudiantes’ con la siguiente estructura y datos que se detallan a continuación:
 - name: type string
-- last_name: tipo string
+- lastName: tipo string
 - age: type number
 - id: type string (campo único)
 - courses: type array
-- grade: type number
 
 Crear una colección llamada Cursos con la siguiente estructura:
 
 - title: type string
 - description: tipo string
-- teacher_name: type number
+- teacherName: type number
 - students: type array
 
 Todos los campos deben ser requeridos obligatoriamente ({ required: true })
