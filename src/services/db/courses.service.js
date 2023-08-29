@@ -1,6 +1,6 @@
-import { coursesModel } from "./models/courses.js";
+import {coursesModel}  from "./models/courses.js";
 
-export default class StudentService {
+export default class CourseService {
     constructor() {
         console.log("Working courses with Database persistence in mongodb");
     }
@@ -10,6 +10,10 @@ export default class StudentService {
         return courses.map(course => course.toObject());
     }
     save = async (course) => {
-        // Completar
+        try {
+            await coursesModel.create(course)   
+        } catch (error) {
+            console.error(error)
+        }
     }
 }
